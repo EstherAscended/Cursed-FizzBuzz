@@ -43,26 +43,6 @@ let target;
 let numberToFizzBuzz;
 let delay = 30;
 
-/*
-function fizzBuzzTest (n)
-{
-    const FIZZ = 3;
-    const BUZZ = 5;
-    let email = "";
-    for (let i = 1; i <=n; i++)
-    {
-        let output = "";
-        
-        if (i % FIZZ === 0) output += "Fizz";
-        if (i % BUZZ === 0) output += "Buzz";
-
-        if (output) email += (output + "\n");
-        else email += (i + "\n");
-    }
-    return email;
-}
-*/
-
 async function fizzBuzz (n)
 {
     const FIZZ = 3;
@@ -128,15 +108,6 @@ async function fizzBuzz (n)
     return email;
 }
 
-/*
-async function getFizzBuzzTestAnswer () {
-    let data = await fizzBuzz(50);    
-    console.log(data);
-    console.log(fizzBuzzTest(50));
-    if (data == fizzBuzzTest(50)) console.log("hooray");
-}
-getFizzBuzzTestAnswer();
-*/
 async function sendMail(userName, passWd, service, sender, recipient, n)
 {
     let data = await fizzBuzz(n);
